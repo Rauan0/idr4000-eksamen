@@ -32,7 +32,7 @@ Resistance training volume, muscle strength and muscle mass are heavily research
 
 There are different definitions of resistance training volume, but Vandré Casagrande Figueiredo describes it as "the product of the number of repetitions x number of sets x intensity load" [@figueiredo_2018]. People who participate in resistance training use different volumes based on their goals. Lower volume and heavy loads is generally used to stimulate muscle strength, while higher volume and lower loads is more often used to stimulate muscle growth and increase muscle mass [@acsm_2009]. For the average individual who does not care to optimize muscle strength or muscle growth, but rather works out purely for their health, it may be difficult to know which volume should be used in their training. They may not want to spend more time in the gym than necessary and therefore want to know how little volume they would have to do to still be able to see results and progression. Studies investigating this on trained men have already been conducted [@schoenfeld_2019]. It is likely more important to conduct studies for those who already struggle with getting to the gym to know which volume they should settle for, as they likely lack both experience and knowledge.
 
-With this in mind, the purpose of this study is to investigate developments in muscle strength and muscle mass in untrained individuals with different resistance training volume.
+With this in mind, the purpose of this study is to investigate developments in muscle strength and muscle mass in untrained individuals in response to different resistance training volume.
 
 ## Methods
 
@@ -104,7 +104,7 @@ Lean muscle mass was assessed before and after the 12-week intervention using du
 
 ### Data analysis
 
-Data analysis was performed in RStudio. To compare changes in MM and MS, a paired t-test was utilized. Significance level was set to p \< 0.05.
+Data analysis was performed in RStudio. To compare changes in muscle mass and muscle strength, a paired t-test was utilized. Changes in muscle mass was observed using a vastus lateralis biopsy, while changes in muscle strength was observed through changes in 1RM in the leg press machine. Significance level for the paired t-test was set to p \< 0.05.
 
 ## Results
 
@@ -228,8 +228,6 @@ musclestrength <- strengthvolume %>%
 
 # Paired t-test
 t.test(musclestrength$multiple, musclestrength$single, paired = TRUE)
-
-
 ```
 
 ```{r}
@@ -262,7 +260,7 @@ strengthvolume %>%
 
 ```
 
-Figure 1 shows the differences in 1RM in leg press between single-set and multiple-set. The average difference in 1RM between sets were 7.2 kg, 95% CI: \[0.9, 13.5\], p = 0.026. Both legs have increased in muscle strength, but the legs that did three sets have increased significantly more than the legs that did one set.
+Figure 1 shows the differences in 1RM in leg press between single-set and multiple-set. The average difference in 1RM between sets were 7.2 kg, 95% CI: \[0.9, 13.5\], p = 0.026. Both legs have increased in muscle strength, but the legs that did multiple-sets have increased significantly more than the legs that did one set.
 
 ```{r}
 #| echo: FALSE
@@ -301,14 +299,14 @@ dxadata %>%
 
 ```
 
-Figure 2 shows the differences in lean mass between single-set and multiple-set. The average difference in lean mass changes between sets were `r m1results`. Both legs have increased muscle mass but the legs that did three sets have increased significantly more than the legs that did one set.
+Figure 2 shows the differences in lean mass between single-set and multiple-set. The average difference in lean mass changes between sets were `r m1results`. Both legs have increased muscle mass but the legs that did multiple-sets have increased significantly more than the legs that did single-sets.
 
 ## Discussion
 
-The purpose of this study was to investigate the development in muscle strength and muscle mass in untrained individuals with different resistance training volume. A significant difference in both muscle strength and muscle mass could be seen in favor of the legs that did three sets as opposed to one set.
+The purpose of this study was to investigate the development in muscle strength and muscle mass in untrained individuals in response to different resistance training volume. A significant difference in both muscle strength and muscle mass could be seen in favor of the legs that did multiple-sets as opposed to one set.
 
 The results supports finds from previous studies [@schoenfeld_2019]. Schoenfeld's study was conducted on trained men, and it was unknown if the same would apply to beginners as well. Beginners usually has few problems seeing progression when starting with a resistance training program. In figure 1 and figure 2 we can observe the subjects gaining respectively muscle strength and muscle mass from both the single-set protocol and the multiple-set protocol. It is fair to assume that if the intervention had lasted longer, the single-set would at some point have stagnated more than the multiple-set as the subjects increased in muscle strength and muscle mass.
 
 ## Conclusion
 
-For untrained individuals who works out to enjoy the health benefits of resistance training, a single-set workout will be adequate up to a certain point. If resistance training is found to be enjoyable and the individuals want to see more progression, a higher volume is preferrable and will yield a significantly higher level of muscle strength and muscle mass. This may even be required after a certain point in time to see any progression, but research over a longer period of time is needed to say this with certainty.
+For untrained individuals who works out to enjoy the health benefits of resistance training, a single-set workout will be adequate up to a certain point. The results in this study shows significant differences between single-set and multiple-set workouts in regards to both muscle strength and muscle mass.
