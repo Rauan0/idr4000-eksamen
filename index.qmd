@@ -1,0 +1,3 @@
+# Forord {.unnumbered}
+
+Dette er mappeeksamen i IDR4000 - Kvantitativ metode og statistikk. Alle filer som denne boken bygger på kan finnes i https://github.com/Rauan0/idr4000-eksamen.git. 

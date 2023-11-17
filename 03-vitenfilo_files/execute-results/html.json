@@ -1,0 +1,14 @@
+{
+  "hash": "f5dc0a6371a4ff57ec9361d263a5a82d",
+  "result": {
+    "markdown": "---\noutput: html_document\neditor_options: \n  chunk_output_type: console\n---\n\n\n# Vitenskapsfilosofi\n\nReliabilitet [@andersen2000]\n\n## Ny overskrift\n\n\n::: {.cell}\n\n:::\n\n\nResultat av t-test var (p=0.04)\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,27 @@
+project:
+  type: book
+
+book:
+  title: "IDR4000 MAPPEEKSAMEN"
+  author: "411"
+  date: "11/17/2023"
+  chapters:
+    - index.qmd
+    - 01-reliabilitet.qmd
+    - 02-vitenfilo.qmd
+    - 03-studydesign.qmd
+    - 04-analyzing-repeated-measures-experiments.qmd
+    - 05-labrapport.qmd
+    - references.qmd
+    
+  
+bibliography: resources/bibliography.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+
+

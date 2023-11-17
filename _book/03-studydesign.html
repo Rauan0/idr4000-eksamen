@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>IDR4000 MAPPEEKSAMEN - 3&nbsp; Study Design</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./04-analyzing-repeated-measures-experiments.html" rel="next">
+<link href="./02-vitenfilo.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./03-studydesign.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Study Design</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">IDR4000 MAPPEEKSAMEN</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Forord</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-reliabilitet.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Reliabilitet</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-vitenfilo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Vitenskapsfilosofi</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-studydesign.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Study Design</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-analyzing-repeated-measures-experiments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">The effect of different resistance training volumes on muscle strength and muscle mass in untrained individuals</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-labrapport.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Introduksjon</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Referanseliste</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">3.1</span> Introduction</a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods"><span class="header-section-number">3.2</span> Methods</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results"><span class="header-section-number">3.3</span> Results</a></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion"><span class="header-section-number">3.4</span> Discussion</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">3.5</span> Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Study Design</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="introduction" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">3.1</span> Introduction</h2>
+<p>The purpose of this paper is to investigate different study designs. Studies included should investigate BP (block periodization) on VO2max development in endurance athletes. The paper will focus on the design of studies and selection of statistical tests to answer study aims, as well as discussing strengths and weaknesses of said studies. This will lead to a recommendation for how future studies on the topic should be designed.</p>
+</section>
+<section id="methods" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="methods"><span class="header-section-number">3.2</span> Methods</h2>
+<p>A literature search was conducted in databases PubMed and Google Scholar. The search term used was “block periodization effect vo2max endurance athletes”. This is a heavily researched subject, so for the sake of keeping this paper short, five articles were included.</p>
+</section>
+<section id="results" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="results"><span class="header-section-number">3.3</span> Results</h2>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-sm table-striped small" data-quarto-postprocess="true">
+<caption>Table 1: Study characteristics from the included studies </caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Study</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Participants</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Statistical_tests</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Study_design</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Roennestad et al. (2012)</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">n=19 trained male cyclists</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Effect size, unpaired Student’s t-test, paired Student’s t-test, one-way repeated measures ANOVA, Tukey's HSD test, two-way repeated measures ANOVA, Bonferroni post-hoc test</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">One group performed BP. The first week constituted of five sessions of HIT, followed by 3 weeks of one weekly HIT session and focus on LIT. The other group performed 4 weeks of two weekly HIT sessions interspersed with LIT.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Bakken (2013)</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">n=19 trained males and females</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Effect size, unpaired student’s t-test, paired student’s t-test</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">One group performed 5 weeks BP, consisting of 5-1-3-1-1 HIT sessions. The other group performed 2-2-3-2-2 HIT sessions.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Ing (2019)</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">n=25 healthy trained/well-trained cyclists</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Shapiro-Wilkes test, two-tailed two samples student’s t-test, two-way repeated measures ANOVA, Tukey’s HSD test, effect size</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">The training was organized in three cycles of 4 weeks. One group performed BP, consisting of 4 MIT sessions during week , LIT workouts during week 2, 4 HIT sessions during week 3 and a recovery week during week 4. The other group performed 1 MIT and 1 HIT session and LIT.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Thyli (2013)</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">n=19 trained male and female cross-country skiers and biathletes</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Unpaired student’s t-test, paired student’s t-test, effect size</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">One group performed BP, where week 1 and 3 consisted of respectively five and three HIT sessions, followed by respectively one and two weeks of one weekly HIT session. The other group performed four weeks of two HIT sessions and one week of three HIT sessions.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Solli et al. (2019)</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">n=1 cross-country skier</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Paired sample t-test, Wilcoxon signed-rank test</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">The study was conducted on the most successful cross-country skier of all time in two different seasons (one season consisting of BP and one season consisting of traditional training). The study defined a HIT block as &gt;4 HIT sessions a week (not including competitions).</td>
+</tr>
+</tbody><tfoot>
+<tr class="even">
+<td style="text-align: left; padding: 0;"><span style="font-style: italic;">Note: </span></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding: 0;"><sup></sup> ANOVA = analysis of variance, HSD = honest significance test, BP = block periodization, HIT = high-intensity aerobic training, LIT = low-intensity training, MIT = moderate-intensity training</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tfoot>
+
+</table>
+
+
+</div>
+</div>
+<p>Four out of five of the included studies (<span class="citation" data-cites="rønnestad2014">(<a href="references.html#ref-rønnestad2014" role="doc-biblioref">Rønnestad, Hansen, and Ellefsen 2014</a>)</span>;<span class="citation" data-cites="bakken2013">(<a href="references.html#ref-bakken2013" role="doc-biblioref">Bakken 2013</a>)</span>; <span class="citation" data-cites="ing2019">(<a href="references.html#ref-ing2019" role="doc-biblioref">Ing 2019</a>)</span>; <span class="citation" data-cites="thyli2013">(<a href="references.html#ref-thyli2013" role="doc-biblioref">Thyli 2013</a>)</span>) split the subjects in two groups: one performing BP and one performing a more traditional training plan. <span class="citation" data-cites="solli2019">(<a href="references.html#ref-solli2019" role="doc-biblioref">Solli, Tønnessen, and Sandbakk 2019</a>)</span> studied the training of the most successful cross-country skier of all time and based the study on this. The number of statistical tests used to determine factors related to the study results varied from two (<span class="citation" data-cites="solli2019">(<a href="references.html#ref-solli2019" role="doc-biblioref">Solli, Tønnessen, and Sandbakk 2019</a>)</span>) to seven (<span class="citation" data-cites="rønnestad2014">(<a href="references.html#ref-rønnestad2014" role="doc-biblioref">Rønnestad, Hansen, and Ellefsen 2014</a>)</span>). Some of the statistical tests are used in multiple studies, such as effect size and different t-tests.</p>
+</section>
+<section id="discussion" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="discussion"><span class="header-section-number">3.4</span> Discussion</h2>
+<p>The purpose of this paper was to investigate different study designs in studies related to block periodization on VO2max development. Five studies were included. Four of the studies included two different groups of endurance athletes, where one group performed HIT block periodization, while the other group performed a more traditional training plan. Effect size was used in four of the five included studies. This is a tool used to compare the practical significance of the performance improvements among the two groups <span class="citation" data-cites="rønnestad2014">(<a href="references.html#ref-rønnestad2014" role="doc-biblioref">Rønnestad, Hansen, and Ellefsen 2014</a>)</span>. Paired and unpaired student’s t-test were used in most studies. Unpaired student’s t-test is used to check for differences between the two groups at baseline and after the training period. Paired student’s t-test is used to compare each group at baseline and after the training period. How many statistical tests one should include in a study will vary how large its scope is. <span class="citation" data-cites="rønnestad2014">(<a href="references.html#ref-rønnestad2014" role="doc-biblioref">Rønnestad, Hansen, and Ellefsen 2014</a>)</span> had seven different tests, and while this may give more reliable results, it is not necessarily the correct way to do it for smaller studies as you could end up spending too much time performing and analyzing these tests. Most of the studies have a study sample of around 20, excluding <span class="citation" data-cites="solli2019">(<a href="references.html#ref-solli2019" role="doc-biblioref">Solli, Tønnessen, and Sandbakk 2019</a>)</span> All studies have used a trained population. This could be both useful and less useful, depending on how you put it. Trained athletes have a better understanding of their training and how LIT, MIT and HIT training works than the general population. This will lead to more precise results as this population will be more precise in their training. It would, however, make it harder to generalize a different population. These studies showing BP having an effect for a well-trained population does not mean it would necessarily have an effect for the average person who trains 3 times a week. Another problem with the population of these studies is the lack of women represented. All but one study (<span class="citation" data-cites="rønnestad2014">(<a href="references.html#ref-rønnestad2014" role="doc-biblioref">Rønnestad, Hansen, and Ellefsen 2014</a>)</span>) included women, but men are greatly overrepresented. According to <span class="citation" data-cites="cowley2021">(<a href="references.html#ref-cowley2021" role="doc-biblioref">Cowley et al. 2021</a>)</span>, females are significantly underrepresented in exercise and sport research. BP influencing VO2max in men does not necessarily mean it will have an effect on women, as the male and female body are different from each other and may also respond differently to training. Women make up half of the world’s population, so including them more in research should be a given. All studies included except <span class="citation" data-cites="solli2019">(<a href="references.html#ref-solli2019" role="doc-biblioref">Solli, Tønnessen, and Sandbakk 2019</a>)</span> split subjects into two groups, where one group performed BP, while the other performed a more traditional training plan. This is likely the way to go for these kinds of studies. It would be interesting to see the results if the subjects were not split in two groups, but rather performed BP to see VO2max improvements of that, and then performed traditional training to see VO2max improvements of that. This could potentially lead to less reliable results, as time of year could influence VO2max. <span class="citation" data-cites="solli2019">(<a href="references.html#ref-solli2019" role="doc-biblioref">Solli, Tønnessen, and Sandbakk 2019</a>)</span> did this, though with just one participant and BP and traditional training being performed with 10 years between them. This study did show that both training methods have been utilized with great success, with the obvious limitation of the subject being the most successful cross-country skier of all time, which is an extremely narrow population.</p>
+</section>
+<section id="conclusion" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">3.5</span> Conclusion</h2>
+<p>While the included studies do share many similarities, there are also differences between them. Some are master’s theses, which are written by less experienced researchers. Thus, they may not be familiar with every statistical test that are used in some of the other studies. I would not say the goal is to include the most tests you can, but rather use a reasonable number of tests that will give you the answer you are looking for. The study sample is around 20 in most of the studies, and a higher study population will usually give more reliable results. Future research should thrive to include more women, as they are severely underrepresented in both the articles presented in this paper, but also in sports science in general. Most studies in this paper split subjects in two groups, and this is likely recommended also for future research, even though it poses the problem of different athletes responding differently to different training, it is likely that having one group performing both training methods would be difficult to get reliable results from.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-bakken2013" class="csl-entry" role="listitem">
+Bakken, Timo Andre. 2013. <span>“Effects of Block Periodization Training Versus Traditional Periodization Training in Trained Cross Country Skiers.”</span> Thesis. <a href="https://www.diva-portal.org/smash/get/diva2:689598/FULLTEXT01.pdfEffects">https://www.diva-portal.org/smash/get/diva2:689598/FULLTEXT01.pdfEffects</a>.
+</div>
+<div id="ref-cowley2021" class="csl-entry" role="listitem">
+Cowley, Emma S., Alyssa A. Olenick, Kelly L. McNulty, and Emma Z. Ross. 2021. <span>“<span>‘Invisible Sportswomen’</span>: The Sex Data Gap in Sport and Exercise Science Research.”</span> Journal Article. <em>Women in Sport and Physical Activity Journal</em> 29 (2): 146–51. <a href="https://doi.org/10.1123/wspaj.2021-0028">https://doi.org/10.1123/wspaj.2021-0028</a>.
+</div>
+<div id="ref-ing2019" class="csl-entry" role="listitem">
+Ing, Steven Adolfo. 2019. <span>“The Effects of Systematic Block Versus Traditional Periodization on Physiological and Performance Indicators of Well-Trained Cyclists.”</span> Thesis. <a href="https://ntnuopen.ntnu.no/ntnu-xmlui/bitstream/handle/11250/2613226/no.ntnu%3Ainspera%3A2453853.pdf?sequence=1&amp;isAllowed=y">https://ntnuopen.ntnu.no/ntnu-xmlui/bitstream/handle/11250/2613226/no.ntnu%3Ainspera%3A2453853.pdf?sequence=1&amp;isAllowed=y</a>.
+</div>
+<div id="ref-rønnestad2014" class="csl-entry" role="listitem">
+Rønnestad, B. R., J. Hansen, and S. Ellefsen. 2014. <span>“Block Periodization of High-Intensity Aerobic Intervals Provides Superior Training Effects in Trained Cyclists.”</span> Journal Article. <em>Scandinavian Journal of Medicine &amp; Science in Sports</em> 24 (1): 34–42. https://doi.org/<a href="https://doi.org/10.1111/j.1600-0838.2012.01485.x">https://doi.org/10.1111/j.1600-0838.2012.01485.x</a>.
+</div>
+<div id="ref-solli2019" class="csl-entry" role="listitem">
+Solli, Guro Strøm, Espen Tønnessen, and Øyvind Sandbakk. 2019. <span>“Block Vs. Traditional Periodization of HIT: Two Different Paths to Success for the World’s Best Cross-Country Skier.”</span> Journal Article. <em>Frontiers in Physiology</em> 10. <a href="https://www.frontiersin.org/articles/10.3389/fphys.2019.00375">https://www.frontiersin.org/articles/10.3389/fphys.2019.00375</a>.
+</div>
+<div id="ref-thyli2013" class="csl-entry" role="listitem">
+Thyli, Vetle. 2013. <span>“Block Periodization Versus Traditional Periodization in Trained Cross-Country Skiers and Biathletes.”</span> Thesis. <a href="http://www.diva-portal.se/smash/get/diva2:716277/FULLTEXT01.pdf">http://www.diva-portal.se/smash/get/diva2:716277/FULLTEXT01.pdf</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./02-vitenfilo.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Vitenskapsfilosofi</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./04-analyzing-repeated-measures-experiments.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">The effect of different resistance training volumes on muscle strength and muscle mass in untrained individuals</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>

@@ -1,0 +1,56 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+# Study Design
+
+## Introduction
+
+The purpose of this paper is to investigate different study designs. Studies included should investigate BP (block periodization) on VO2max development in endurance athletes. The paper will focus on the design of studies and selection of statistical tests to answer study aims, as well as discussing strengths and weaknesses of said studies. This will lead to a recommendation for how future studies on the topic should be designed.
+
+## Methods
+
+A literature search was conducted in databases PubMed and Google Scholar. The search term used was "block periodization effect vo2max endurance athletes". This is a heavily researched subject, so for the sake of keeping this paper short, five articles were included.
+
+## Results
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+#| tbl-cap: "Table 1: Study characteristics from the included studies"
+#| label: "study-char"
+
+library(kableExtra)
+
+df <- data.frame(
+  Study = c("Roennestad et al. (2012)", "Bakken (2013)", "Ing (2019)", "Thyli (2013)", "Solli et al. (2019)"),
+  Participants = c("n=19 trained male cyclists", "n=19 trained males and females", "n=25 healthy trained/well-trained cyclists", "n=19 trained male and female cross-country skiers and biathletes", "n=1 cross-country skier"),
+  Statistical_tests = c("Effect size, unpaired Student’s t-test, paired Student’s t-test, one-way repeated measures ANOVA, Tukey's HSD test, two-way repeated measures ANOVA, Bonferroni post-hoc test ", "Effect size, unpaired student’s t-test, paired student’s t-test ", "Shapiro-Wilkes test, two-tailed two samples student’s t-test, two-way repeated measures ANOVA, Tukey’s HSD test, effect size ", "Unpaired student’s t-test, paired student’s t-test, effect size ", "Paired sample t-test, Wilcoxon signed-rank test"),
+  Study_design = c("One group performed BP. The first week constituted of five sessions of HIT, followed by 3 weeks of one weekly HIT session and focus on LIT. The other group performed 4 weeks of two weekly HIT sessions interspersed with LIT.", "One group performed 5 weeks BP, consisting of 5-1-3-1-1 HIT sessions. The other group performed 2-2-3-2-2 HIT sessions.", "The training was organized in three cycles of 4 weeks. One group performed BP, consisting of 4 MIT sessions during week , LIT workouts during week 2, 4 HIT sessions during week 3 and a recovery week during week 4. The other group performed 1 MIT and 1 HIT session and LIT.", "One group performed BP, where week 1 and 3 consisted of respectively five and three HIT sessions, followed by respectively one and two weeks of one weekly HIT session. The other group performed four weeks of two HIT sessions and one week of three HIT sessions.", "The study was conducted on the most successful cross-country skier of all time in two different seasons (one season consisting of BP and one season consisting of traditional training). The study defined a HIT block as >4 HIT sessions a week (not including competitions).")
+)
+
+# Define footnote text
+footnote_text <- "ANOVA = analysis of variance, HSD = honest significance test, BP = block periodization, HIT = high-intensity aerobic training, LIT = low-intensity training, MIT = moderate-intensity training"
+
+styled_table_with_footnote <- kable(df, row.names = FALSE) %>%
+  column_spec(1:4, border_left = TRUE, border_right = TRUE) %>%
+  kable_styling() %>%
+  footnote(general = footnote_text)  # Adding the footnote
+
+styled_table_with_footnote  # Display the styled table with footnote
+
+
+```
+
+Four out of five of the included studies ([@rønnestad2014];[@bakken2013]; [@ing2019]; [@thyli2013]) split the subjects in two groups: one performing BP and one performing a more traditional training plan. [@solli2019] studied the training of the most successful cross-country skier of all time and based the study on this. The number of statistical tests used to determine factors related to the study results varied from two ([@solli2019]) to seven ([@rønnestad2014]). Some of the statistical tests are used in multiple studies, such as effect size and different t-tests.
+
+## Discussion
+
+The purpose of this paper was to investigate different study designs in studies related to block periodization on VO2max development. Five studies were included. Four of the studies included two different groups of endurance athletes, where one group performed HIT block periodization, while the other group performed a more traditional training plan. Effect size was used in four of the five included studies. This is a tool used to compare the practical significance of the performance improvements among the two groups [@rønnestad2014]. Paired and unpaired student's t-test were used in most studies. Unpaired student's t-test is used to check for differences between the two groups at baseline and after the training period. Paired student's t-test is used to compare each group at baseline and after the training period. How many statistical tests one should include in a study will vary how large its scope is. [@rønnestad2014] had seven different tests, and while this may give more reliable results, it is not necessarily the correct way to do it for smaller studies as you could end up spending too much time performing and analyzing these tests. Most of the studies have a study sample of around 20, excluding [@solli2019] All studies have used a trained population. This could be both useful and less useful, depending on how you put it. Trained athletes have a better understanding of their training and how LIT, MIT and HIT training works than the general population. This will lead to more precise results as this population will be more precise in their training. It would, however, make it harder to generalize a different population. These studies showing BP having an effect for a well-trained population does not mean it would necessarily have an effect for the average person who trains 3 times a week. Another problem with the population of these studies is the lack of women represented. All but one study ([@rønnestad2014]) included women, but men are greatly overrepresented. According to [@cowley2021], females are significantly underrepresented in exercise and sport research. BP influencing VO2max in men does not necessarily mean it will have an effect on women, as the male and female body are different from each other and may also respond differently to training. Women make up half of the world's population, so including them more in research should be a given. All studies included except [@solli2019] split subjects into two groups, where one group performed BP, while the other performed a more traditional training plan. This is likely the way to go for these kinds of studies. It would be interesting to see the results if the subjects were not split in two groups, but rather performed BP to see VO2max improvements of that, and then performed traditional training to see VO2max improvements of that. This could potentially lead to less reliable results, as time of year could influence VO2max. [@solli2019] did this, though with just one participant and BP and traditional training being performed with 10 years between them. This study did show that both training methods have been utilized with great success, with the obvious limitation of the subject being the most successful cross-country skier of all time, which is an extremely narrow population.
+
+## Conclusion
+
+While the included studies do share many similarities, there are also differences between them. Some are master's theses, which are written by less experienced researchers. Thus, they may not be familiar with every statistical test that are used in some of the other studies. I would not say the goal is to include the most tests you can, but rather use a reasonable number of tests that will give you the answer you are looking for. The study sample is around 20 in most of the studies, and a higher study population will usually give more reliable results. Future research should thrive to include more women, as they are severely underrepresented in both the articles presented in this paper, but also in sports science in general. Most studies in this paper split subjects in two groups, and this is likely recommended also for future research, even though it poses the problem of different athletes responding differently to different training, it is likely that having one group performing both training methods would be difficult to get reliable results from.
